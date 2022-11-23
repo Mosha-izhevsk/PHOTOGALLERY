@@ -49,10 +49,12 @@ result = pic1+event1+shoot1+music1;
 if(result>500){
 discount=result* 15/100;
 var total=result-discount;
+alert("You got a discount of R"+discount+" you total is R"+total);
+document.getElementById('amount').value=("R " +total);
+}else{
+document.getElementById('amount').value=("R " +result);
 }
 
-alert("R" +total);
-document.getElementById('amount').value=("R " +total);
 }
 </script>
 </div>
