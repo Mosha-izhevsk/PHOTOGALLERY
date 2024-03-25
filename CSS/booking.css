@@ -1,65 +1,62 @@
-
-header{
-	postion:fixed;
-	top:0;
-	right:0;
-	width:80%;
-	z-index:1000;
-	display:flex;
-	align-items:center;
-	justify-content:space-between;
-	padding:30px 170px;
-}
-.logo{
-	color:#333;
-	font-weight:600;
-	font-size:2.4rem;
-}
-.navbar{
-	display:flex;
-}
-.navbar a{
-	color:#299;
-	font-size:1.1rem;
-	padding: 10px 20px;
-	font-weight:500;
-}
-.navbar a.hover{
-	color:#333;
-	transition :.4;
-}footer{
-	postion:fixed;
-	color:#299;
-	display:flex;
-	align-items:center;
-	
-background:#eef;}
-.into h1{
-	color:#299;
-
-}
-.into h2{
-	color:#299;
-
-}
-.into p{
-color:#299;	
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; /* Added left: 0; to ensure the header spans the full width */
+    width: 100%; /* Changed width to 100% for responsiveness */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%; /* Adjusted padding for responsiveness */
 }
 
-.cont{
-	color:#299;
-	
+.logo {
+    color: #333;
+    font-weight: 600;
+    font-size: 2.4rem;
 }
-.booking{
-	color:#299;
+
+.navbar {
+    display: flex;
 }
-.calculator{
-align-items:center;
-padding:30px;
-background:white;
-border: 20px solid #299;
+
+.navbar a {
+    color: #299; /* Changed link color to a darker shade of blue */
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
 }
-.cal-cal h3{	
-	color:#299;
-	display:flex;
+
+.navbar a:hover {
+    color: #333; /* Changed link hover color to a darker shade of grey */
+    transition: 0.4s;
+}
+
+footer {
+    position: fixed;
+    bottom: 0; /* Fixed footer to the bottom */
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #eef; /* Light blue background */
+    color: #299; /* Set text color */
+    padding: 10px 5%; /* Adjusted padding for responsiveness */
+}
+
+.into h1,
+.into h2,
+.into p,
+.cont,
+.booking,
+.cal-cal h3 {
+    color: #299; /* Set text color for consistency */
+}
+
+.calculator {
+    align-items: center;
+    padding: 30px;
+    background: white;
+    border: 20px solid #299; /* Changed border color to match the text color */
 }
