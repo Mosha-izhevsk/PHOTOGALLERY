@@ -1,54 +1,57 @@
-
-header{
-	postion:fixed;
-	top:0;
-	right:0;
-	width:80%;
-	z-index:1000;
-	display:flex;
-	align-items:center;
-	justify-content:space-between;
-	padding:30px 170px;
-}
-.logo{
-	color:#333;
-	font-weight:600;
-	font-size:2.4rem;
-}
-.home{
-	display :flex;
-	align-items: center;
-}
-.navbar{
-	display:flex;
-}
-.navbar a{
-	color:#299;
-	font-size:1.1rem;
-	padding: 10px 20px;
-	font-weight:500;
-}
-.navbar a.hover{
-	color:#333;
-	transition :.4;
-}
-.into h1{
-	color:#299;
-
-}
-.into h2{
-	color:#299;
-
-}
-footer{
-	postion:fixed;
-	
-	display:flex;
-	align-items:center;
-	
-	background:#eef;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%; /* Adjusted width to span the full width */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%; /* Adjusted padding for responsiveness */
+    background: #fff; /* White background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
 }
 
+.logo {
+    color: #333;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
 
+.home {
+    display: flex;
+    align-items: center;
+}
 
+.navbar {
+    display: flex;
+}
 
+.navbar a {
+    color: #299; /* Changed link color to a darker shade of blue */
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #333; /* Changed link hover color to a darker shade of grey */
+    transition: 0.4s;
+}
+
+.into h1,
+.into h2 {
+    color: #299; /* Set text color in the .into section */
+}
+
+footer {
+    position: fixed;
+    bottom: 0; /* Fixed footer to the bottom */
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #eef; /* Light blue background */
+    padding: 10px 5%; /* Adjusted padding for responsiveness */
+}
