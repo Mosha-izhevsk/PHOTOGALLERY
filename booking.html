@@ -1,75 +1,49 @@
+<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="CSS/booking.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Photo Gallery</title>
+    <link rel="stylesheet" href="CSS/booking.css">
 </head>
-<body><header>
-<a href ="home.html" class="logo"><img src ="photos/PGlogo.jpeg" width="80"></a>
-<div class="box-menu" id="media-icon"></div>
+<body>
+    <header>
+        <a href="home.html" class="logo">
+            <img src="photos/PGlogo.jpeg" width="80" alt="Photo Gallery Logo">
+        </a>
+        <div class="box-menu" id="media-icon"></div>
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    
+    <div class="intro">
+        <center>
+            <h1>PHOTO GALLERY</h1>
+            <h2>QUALITY PHOTOS AT THE BEST PRICE</h2>
+        </center>
+    </div>
 
-<ul class="navbar">
-<li><a href="home.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="booking.html">booking</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul></header>
-<div class="into">
-<center><h1>PHOTO GALLERY</h1>
-<h2>QUALITY PHOTOS AT THE BEST PRICE </h2></center></div>
-<div class ="booking">
-<center><h1>Bookings</h1>
-</center>
-</div>
-</div>
-<div class ="calculator">
-<div class="cal-header">
-<center><br/><h1>Check  Prices and Discounts</h1></center>
-</div><center>
-<div class="cal-cal">
-<form id="cal-form">
+    <div class="booking">
+        <center>
+            <h1>Bookings</h1>
+        </center>
+    </div>
 
-<h3>            Photos(R50 per Picture) :<input type="text"id="pic" placeholder="Enter Quantity "> </h3>
-<h3>              Event(R150 per hour ) :<input type="text"id="vid" placeholder="Enter hours "> </h3>
-<h3>       PhotoShoot(R100 per Session) :<input type="text"id="shoot" placeholder="Enter how many sessions"></h3>
-<h3>Music Video(R500 per Session)+edits :<input type="text"id="mv" placeholder="Enter amount of sessions "></h3>
-<h3>               You amount to Pay is :<input type="text"id="amount" placeholder="R 0,00"></h3>
-<input type="button" onClick="Calculate()"value="calculate"/>
-
-
-<script>
-function Calculate()
-{var pic =parseInt(document.getElementById("pic").value)||0;
-var pic1=pic*50;
-var event =parseInt(document.getElementById("vid").value)||0;
-var event1=event*150;
-var shoot =parseInt(document.getElementById("shoot").value)||0;
-var shoot1=shoot*100;
-var music =parseInt(document.getElementById("mv").value)||0;
-var music1=music*500;
-result = pic1+event1+shoot1+music1;
-if(result>500){
-discount=result* 15/100;
-var total=result-discount;
-alert("You got a discount of R"+discount+" you total is R"+total);
-document.getElementById('amount').value=("R " +total);
-}else{
-document.getElementById('amount').value=("R " +result);
-}
-
-}
-</script>
-</div>
-
-<div class="cont"><center>
-<h3>For booking cantact us on 0797348999</h3>
-<h3>or email us at :izhevsk114@gmail.com</h3>
-<p>For more information <a href="contact.html">click here</a></p>
-</center>
-
-<footer>
-  <p>Author: PG dev group    </p> &copy;<p> Photo Gallery </p>
-
-  <p><a href="izhevsk114@gmail.com">ouremail@pg.com</a></p>
- 
-</footer>
-
-</body></html>
+    <div class="calculator">
+        <div class="cal-header">
+            <center><h1>Check Prices and Discounts</h1></center>
+        </div>
+        <center>
+            <div class="cal-cal">
+                <form id="cal-form">
+                    <h3>Photos (R50 per Picture): <input type="text" id="pic" placeholder="Enter Quantity"></h3>
+                    <h3>Event (R150 per hour): <input type="text" id="vid" placeholder="Enter hours"></h3>
+                    <h3>PhotoShoot (R100 per Session): <input type="text" id="shoot" placeholder="Enter sessions"></h3>
+                    <h3>Music Video (R500 per Session + edits): <input type="text" id="mv" placeholder="Enter sessions"></h3>
+                    <h3>Your total amount to Pay is: <input type="text" id="amount" placeholder="R 0,00"></h3>
+                    <input type="button" onClick="Calculate()" value="Calculate">
+               **⬤**
